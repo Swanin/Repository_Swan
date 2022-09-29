@@ -1,0 +1,73 @@
+section div{
+    /*largeur*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    }
+
+    div:first-child{
+        background-color: blue;
+        border-radius: 50%;
+    }
+    div:nth-child(2){
+
+    background-color: azure;
+    border-radius: 50%;
+}
+div:nth-child(3){
+    background-color: red;
+    border-radius: 50%;
+
+    /*l'attribut box-shadow permets de rajouter une ombre à un élémént, il est consituer de 3 valeurs qui indiquent: l'espacement; */
+     box-shadow: 15px 15px 15px 
+}
+
+    /*J'applique flexbox sur la section parente de mes div */
+    section { 
+        display: flex;
+
+        /*Alignement en rangé" */
+        flex-direction: row;
+    }
+    
+        /*je crée des helpers */
+
+    .text-center{
+        text-align: center;
+        font-size: 80px;
+    }    
+    .flex{
+        display:flex;
+
+    }
+    /*Déplacement sur l'axe principal (X), on utilise la propriété justify-content*/
+
+    .flex-start{
+justify-content: flex-start;
+
+    }
+
+    .flex-end{
+justify-content: flex-end;
+    }
+
+    .center{
+justify-content: center;
+    }
+
+    .space-between{
+justify-content: space-between;
+    }
+
+    .space-around{
+justify-content: space-around;
+
+    }
+
+    .separation{
+        height: 50px;
+        background-color: yellow;
+    }
+
+        /*Déplacement sur l'axe secondaire (Y), on utilise la propriététext-align*/

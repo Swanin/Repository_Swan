@@ -1,0 +1,110 @@
+/*RALENTIR LE SCROLL*/
+html{
+    scroll-behavior: smooth;
+}
+img{
+    height: 300px;
+
+}
+h2{
+    color: red;
+    text-decoration :underline;
+
+}
+
+h3{
+    color: rgb(77, 17, 242);
+}
+
+.deuxsections{
+    display: flex;
+}
+
+.gauche{
+    width: 800px;
+    height: auto;
+    margin-right: 5em;
+    background-color: aquamarine;
+   
+}
+
+
+
+.btn{
+    background: yellow;
+    color: blue;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin:50 px auto;
+    border-radius: 20px;
+    transform: scale(0.5); /* valeur intial de la propriété*/
+    transition-property: 1s;
+}
+
+.btn:hover{
+    transform: scale(1.25); /* valeur de la propriété*/
+}
+
+.container{
+    background-color: rgb(176, 151, 216);
+}
+
+form{
+    width: 500px;
+    margin: auto;
+    
+}
+
+form input{
+    border: 2px solid #fff;
+    border-radius: 100em;
+    color: blue;
+    font-size: 2.5em;
+    outline: none;
+    padding: 1em;
+    width:100%
+
+}
+/*
+form input:invalid{
+    border: 2px solid red;
+    background: red;
+    color: white;
+}*/
+
+
+/*TRES IMPORTANT*/
+form input:not(:focus):invalid{
+    border: 2px solid red ;
+    background:red;
+    color:white;
+}
+
+.balle{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    border-radius: 50%;
+
+}
+.btn2{
+    background: yellow;
+    color: blue;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin:50 px auto;
+    border-radius: 20px;
+    transform: scale(0.5); /* valeur intial de la propriété*/
+    transition-property: 1s;
+}
+
+
+/* Pour qu'un élément influence l'animation d'un autre élément one les lie avec un "+"*/
+.btn2:hover + .balle {
+    transform: scale(1.25); 
+    background-color: beige;
+}

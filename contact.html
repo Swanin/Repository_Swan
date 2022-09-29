@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <h1>CONTACTEZ MOI</h1>
+
+
+<!--J'INSERE UN FORMULAIRE -->
+<!--L'ATTRIBUT ACTION VA CHERCHER UNE PAGE DE LOGIQUE DE PROGRAMMATION AFIN D'ECHANGER AVEC LE BACK -->
+<form action="../Forms/send.php" method="post"></form>
+<label for="name"> Nom</label>
+<!--LA BALISE INPUT NOUS PERMET D'AFFICHER UN CHAMPE DE SAISIE AFIN DE DIALOGUER AVEC L'UTILISATEUR-->
+<input type="text"
+        name="name"
+        id="name"
+        required> 
+        <br>
+
+  <label for="Prénom"> Prénom</label>  
+  <input type="text"
+          name="Prénom"
+          id="Prénom"
+          required>
+          <br>
+
+  <label for="email">Adresse e-mail</label>
+  <input type="email"
+          name="email"
+          id="email"
+          required> <!--REQUIRED FAIT EN SORTE QUE LE NAVIGATEUR N'ENVERRA JAMAIS LES DONNEES DU FORMULAIRE   SI CE CHAMP PRECIS EST VIDE-->
+        <br>
+
+  <label for="tel"> Numéro de téléphone</label>
+  <input type="number"
+         name="tel"
+         id="tel"
+         required>    
+        <br><br>
+
+<label class="mess" for="tel"> Votre message</label>
+<input type="number"
+        name="tel"
+        id="tel"
+        required>
+
+
+          <input type="submit" value="envoyer">
+
+          <br><br>
+
+<!-- LIEN VERS LA PAGEE D'ACCUEIL-->
+<a href="../index.html">Retour à la page d'accueil</a>
+</body>
+</html>
